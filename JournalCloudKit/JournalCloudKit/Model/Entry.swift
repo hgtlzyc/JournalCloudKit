@@ -9,15 +9,15 @@ import CloudKit
 
 struct EntryConstants{
     static let recordType = "Entry"
-    private static let titleKey = "title"
-    private static let bodyKey = "body"
-    private static let timestampKey = "timestamp"
+    static let titleKey = "title"
+    static let bodyKey = "body"
+    static let timestampKey = "timestamp"
 }
 
 class Entry {
     
-    let title: String
-    let body: String
+    var title: String
+    var body: String
     let timestamp: Date
     let ckRecordID: CKRecord.ID
     
@@ -32,6 +32,17 @@ class Entry {
     }
     
 }///End Of Entry
+
+extension Entry: Hashable {
+    static func == (lhs: Entry, rhs: Entry) -> Bool {
+        lhs.ckRecordID == rhs.ckRecordID
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(ckRecordID)
+    }
+}
+
 
 extension Entry {
     

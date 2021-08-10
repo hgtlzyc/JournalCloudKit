@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E95F9EBD26C1C85900C9CD3B /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95F9EBC26C1C85900C9CD3B /* EntryController.swift */; };
+		E95F9EBF26C1D28900C9CD3B /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95F9EBE26C1D28900C9CD3B /* EntryListTableViewController.swift */; };
+		E95F9EC126C1D32A00C9CD3B /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95F9EC026C1D32A00C9CD3B /* EntryDetailViewController.swift */; };
 		E9D3887426C1C1A50054918E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3887326C1C1A50054918E /* AppDelegate.swift */; };
 		E9D3887626C1C1A50054918E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D3887526C1C1A50054918E /* SceneDelegate.swift */; };
 		E9D3887B26C1C1A50054918E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9D3887926C1C1A50054918E /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 
 /* Begin PBXFileReference section */
 		E95F9EBC26C1C85900C9CD3B /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		E95F9EBE26C1D28900C9CD3B /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		E95F9EC026C1D32A00C9CD3B /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
 		E9D3887026C1C1A50054918E /* JournalCloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JournalCloudKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9D3887326C1C1A50054918E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9D3887526C1C1A50054918E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		E9D3888D26C1C1FB0054918E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E95F9EBE26C1D28900C9CD3B /* EntryListTableViewController.swift */,
+				E95F9EC026C1D32A00C9CD3B /* EntryDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,8 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9D3889526C1C2B80054918E /* Entry.swift in Sources */,
+				E95F9EBF26C1D28900C9CD3B /* EntryListTableViewController.swift in Sources */,
 				E9D3887426C1C1A50054918E /* AppDelegate.swift in Sources */,
 				E95F9EBD26C1C85900C9CD3B /* EntryController.swift in Sources */,
+				E95F9EC126C1D32A00C9CD3B /* EntryDetailViewController.swift in Sources */,
 				E9D3887626C1C1A50054918E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
